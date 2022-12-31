@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- HTML Codes by Quackit.com -->
+<title>
+The ML Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {background-color:#5489cf;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
+h1{text-align:left;font-family:Arial, sans-serif;color:#000000;background-color:#5489cf;}
+p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:bold;color:#000000;background-color:#5489cf;}
+li {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:bold;color:#000000;background-color:#5489cf;}
+</style>
+</head>
+<body>
+<h1>The ML Project</h1>
+<p>The Following Project aims to predict the model accuracy by four methods:
+  <ul>
+    <li>Linear Regression</li>
+    <li>Logistic Regression</li>
+    <li>K Nearest Neighbours</li>
+    <li>Random Forest</li>
+  </ul>
+</p>
+{%for post in posts %}
+    <h2>{{post.model}}</h2>
+      <p>{{post.Type}}</p>
+      <!--<p>accuracy: <b>{{post.Accuracy}}</b></p>-->
+{% endfor %}
+</body>
+</html>
